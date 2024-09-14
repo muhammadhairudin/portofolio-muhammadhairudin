@@ -12,18 +12,26 @@
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <header class="flex flex-col items-center mb-12 sm:flex-row sm:items-start">
             <img src="/src/image/ud13.png" alt="Foto Profil" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 sm:mb-0 sm:mr-6 mt">
-            <div class="text-center sm:text-left">
+            <div class="text-center sm:text-left w-full">
                 <h1 class="text-3xl sm:text-4xl font-bold mb-4 max-w-4xl sm:mb-2 sm:mt-0">Muhammad Hairudin</h1>
-                <div class="divider divider-warning w-12  "></div>
-                <nav>
-                    <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 text-sm sm:text-base text-gray-600 mt-4">
-                        <li><a href="index.html" class="hover:text-yellow-600">HOME</a></li>
-                        <li><a href="projects.html" class="hover:text-blue-600">PROJECTS</a></li>
-                        <li><a href="articles.html" class="hover:text-green-600">ARTICLES</a></li>
-                        <li><a href="contact.html" class="hover:text-purple-600">CONTACT</a></li>
-                </nav>
+                <div class="divider divider-warning w-12 mx-auto sm:mx-0" style="height: 4px;"></div>
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-4">
+                    <nav class="mb-4 sm:mb-0">
+                        <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 text-sm sm:text-base text-gray-600">
+                            <li><a href="index.html" class="hover:text-yellow-600">HOME</a></li>
+                            <li><a href="projects.html" class="hover:text-blue-600">PROJECTS</a></li>
+                            <li><a href="articles.html" class="hover:text-green-600">ARTICLES</a></li>
+                            <li><a href="contact.html" class="hover:text-purple-600">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="relative mt-4 sm:mt-0">
+                        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
             </div>
         </header>
+
 
         <main>
             <div class="bg-white rounded-lg shadow-lg p-8 mb-12">

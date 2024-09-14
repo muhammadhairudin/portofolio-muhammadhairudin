@@ -7,23 +7,32 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
         <header class="flex flex-col items-center mb-12 sm:flex-row sm:items-start">
             <img src="/src/image/ud13.png" alt="Foto Profil" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 sm:mb-0 sm:mr-6 mt">
-            <div class="text-center sm:text-left">
+            <div class="text-center sm:text-left w-full">
                 <h1 class="text-3xl sm:text-4xl font-bold mb-4 max-w-4xl sm:mb-2 sm:mt-0">Muhammad Hairudin</h1>
-                <div class="divider divider-warning w-12  "></div>
-                <nav>
-                    <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 text-sm sm:text-base text-gray-600 mt-4">
-                        <li><a href="index.html" class="hover:text-yellow-600">HOME</a></li>
-                        <li><a href="projects.html" class="hover:text-blue-600">PROJECTS</a></li>
-                        <li><a href="articles.html" class="hover:text-green-600">ARTICLES</a></li>
-                        <li><a href="contact.html" class="hover:text-purple-600">CONTACT</a></li>
-                </nav>
+                <div class="divider divider-warning w-12 mx-auto sm:mx-0" style="height: 4px;"></div>
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-4">
+                    <nav class="mb-4 sm:mb-0">
+                        <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 text-sm sm:text-base text-gray-600">
+                            <li><a href="index.html" class="hover:text-yellow-600">HOME</a></li>
+                            <li><a href="projects.html" class="hover:text-blue-600">PROJECTS</a></li>
+                            <li><a href="articles.html" class="hover:text-green-600">ARTICLES</a></li>
+                            <li><a href="contact.html" class="hover:text-purple-600">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="relative mt-4 sm:mt-0">
+                        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
             </div>
         </header>
+
 
         <main>
             <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
@@ -98,16 +107,20 @@
         <section>
             <h2 class="text-3xl font-bold mb-6">Articles</h2>
             <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-2xl font-bold mb-2">Keluarga Muhammad: Anugerah Dunia dan Akhirat!</h3>
+                <h3 class="text-2xl font-bold mb-2">Keluarga: Anugerah Dunia dan Akhirat!</h3>
                 <div class="flex items-center text-sm text-gray-500 mb-2">
                     <span class="bg-gray-200 rounded px-2 py-1 mr-2">Keluarga</span>
                     <span>13 September 2024</span>
                     <span class="mx-2">•</span>
                     <span>Baarokallahu Fiik</span>
                 </div>
-                <p class="mb-4">"Harta dan anak-anak adalah perhiasan kehidupan dunia 
-                    tetapi amalan-amalan yang kekal lagi saleh adalah lebih baik pahalanya di sisi Tuhanmu serta lebih baik untuk menjadi harapan." (Al-Kahfi: 46)</p>
-                <a href="#" class="text-blue-500 hover:underline">Baca Artikel &gt;</a>
+                
+                <p class="text-right text-2xl mb-2 font-arabic">اللَّهُمَّ أَكْثِرْ مَالِي وَوَلَدِي وَبَارِكْ لِي فِيمَا أَعْطَيْتَنِي</p>
+
+                <p class="mb-4">
+                    "Ya Allah, perbanyaklah hartaku dan anak-anakku, serta berkahilah apa yang Engkau berikan kepadaku."
+                </p>
+                <a href="./src/articles/keluarga-muhammad-article.html" class="text-blue-500 hover:underline">Baca Artikel &gt;</a>
                 <br/>
                 <div class="rating gap-1 mt-2">
                     <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
