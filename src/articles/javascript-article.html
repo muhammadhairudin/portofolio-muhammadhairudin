@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Belajar JavaScript bagi Pemula</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <header class="flex flex-col items-center mb-12 sm:flex-row sm:items-start">
+            <img src="/src/image/ud13.png" alt="Foto Profil" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 sm:mb-0 sm:mr-6 mt">
+            <div class="text-center sm:text-left w-full">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-4 max-w-4xl sm:mb-2 sm:mt-0">Muhammad Hairudin</h1>
+                <div class="divider divider-warning w-12 mx-auto sm:mx-0" style="height: 4px;"></div>
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-4">
+                    <nav class="mb-4 sm:mb-0">
+                        <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6 text-sm sm:text-base text-gray-600">
+                            <li><a href="/index.html" class="hover:text-yellow-600">HOME</a></li>
+                            <li><a href="/projects.html" class="hover:text-blue-600">PROJECTS</a></li>
+                            <li><a href="/articles.html" class="hover:text-green-600">ARTICLES</a></li>
+                            <li><a href="/contact.html" class="hover:text-purple-600">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="relative mt-4 sm:mt-0">
+                        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <aside class="md:w-1/4">
+                <div class="bg-white rounded-lg shadow-lg p-4 sticky top-4">
+                    <h2 class="text-xl font-bold mb-4">Daftar Isi</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#pengenalan" class="text-blue-600 hover:underline">1. Pengenalan JavaScript</a></li>
+                        <li><a href="#persiapan" class="text-blue-600 hover:underline">2. Persiapan Lingkungan Belajar</a></li>
+                        <li><a href="#konsep-dasar" class="text-blue-600 hover:underline">3. Konsep Dasar JavaScript</a></li>
+                        <li><a href="#langkah-belajar" class="text-blue-600 hover:underline">4. Langkah-langkah Belajar</a></li>
+                        <li><a href="#sumber-belajar" class="text-blue-600 hover:underline">5. Sumber Belajar</a></li>
+                        <li><a href="#tips-belajar" class="text-blue-600 hover:underline">6. Tips Belajar</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="md:w-3/4">
+                <article class="bg-white rounded-lg shadow-lg p-6">
+                    <p class="mb-4">JavaScript adalah bahasa pemrograman yang sangat populer dan penting dalam pengembangan web modern. Artikel ini akan membantu Anda memulai perjalanan belajar JavaScript dengan memahami konsep dasar dan langkah-langkah awal.</p>
+
+                    <h2 id="pengenalan" class="text-2xl font-bold mt-6 mb-4">1. Pengenalan JavaScript</h2>
+                    <p class="mb-4">JavaScript adalah bahasa pemrograman tingkat tinggi, dinamis, dan berorientasi objek yang umumnya digunakan untuk membuat interaksi pada halaman web. Beberapa kegunaan JavaScript meliputi:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Memanipulasi elemen HTML</li>
+                        <li>Menangani event (seperti klik mouse atau input keyboard)</li>
+                        <li>Melakukan validasi form</li>
+                        <li>Membuat animasi dan efek visual</li>
+                        <li>Berkomunikasi dengan server (AJAX)</li>
+                    </ul>
+
+                    <h2 id="persiapan" class="text-2xl font-bold mt-6 mb-4">2. Persiapan Lingkungan Belajar</h2>
+                    <p class="mb-4">Untuk mulai belajar JavaScript, Anda hanya membutuhkan:</p>
+                    <ol class="list-decimal list-inside mb-4">
+                        <li>Browser web (seperti Chrome, Firefox, atau Edge)</li>
+                        <li>Text editor (seperti Visual Studio Code, Sublime Text, atau Notepad++)</li>
+                    </ol>
+
+                    <h2 id="konsep-dasar" class="text-2xl font-bold mt-6 mb-4">3. Konsep Dasar JavaScript</h2>
+                    
+                    <h3 class="text-xl font-bold mt-4 mb-2">a. Variabel dan Tipe Data</h3>
+                    <p class="mb-4">JavaScript menggunakan kata kunci <code class="bg-gray-200 px-1 rounded">var</code>, <code class="bg-gray-200 px-1 rounded">let</code>, atau <code class="bg-gray-200 px-1 rounded">const</code> untuk mendeklarasikan variabel:</p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4">
+<code class="language-javascript">let nama = "John";
+const umur = 25;
+var isProgrammer = true;</code></pre>
+                    <p class="mb-4">Tipe data dasar dalam JavaScript meliputi:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>String (teks)</li>
+                        <li>Number (angka)</li>
+                        <li>Boolean (true/false)</li>
+                        <li>Undefined</li>
+                        <li>Null</li>
+                        <li>Object</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">b. Operator</h3>
+                    <p class="mb-4">JavaScript mendukung berbagai operator, termasuk:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Aritmatika: <code class="bg-gray-200 px-1 rounded">+</code>, <code class="bg-gray-200 px-1 rounded">-</code>, <code class="bg-gray-200 px-1 rounded">*</code>, <code class="bg-gray-200 px-1 rounded">/</code>, <code class="bg-gray-200 px-1 rounded">%</code></li>
+                        <li>Perbandingan: <code class="bg-gray-200 px-1 rounded">==</code>, <code class="bg-gray-200 px-1 rounded">===</code>, <code class="bg-gray-200 px-1 rounded">!=</code>, <code class="bg-gray-200 px-1 rounded">!==</code>, <code class="bg-gray-200 px-1 rounded"><</code>, <code class="bg-gray-200 px-1 rounded">></code>, <code class="bg-gray-200 px-1 rounded"><=</code>, <code class="bg-gray-200 px-1 rounded">>=</code></li>
+                        <li>Logika: <code class="bg-gray-200 px-1 rounded">&&</code> (AND), <code class="bg-gray-200 px-1 rounded">||</code> (OR), <code class="bg-gray-200 px-1 rounded">!</code> (NOT)</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">c. Struktur Kontrol</h3>
+                    <p class="mb-4">Struktur kontrol memungkinkan Anda mengatur alur program:</p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4">
+<code class="language-javascript">// If-else
+if (umur >= 18) {
+    console.log("Dewasa");
+} else {
+    console.log("Anak-anak");
+}
+
+// Loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}</code></pre>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">d. Fungsi</h3>
+                    <p class="mb-4">Fungsi adalah blok kode yang dapat digunakan kembali:</p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4">
+<code class="language-javascript">function sapa(nama) {
+    return "Halo, " + nama + "!";
+}
+
+console.log(sapa("Alice")); // Output: Halo, Alice!</code></pre>
+
+                    <h2 id="langkah-belajar" class="text-2xl font-bold mt-6 mb-4">4. Langkah-langkah Belajar</h2>
+                    <ol class="list-decimal list-inside mb-4">
+                        <li>Pelajari sintaks dasar dan konsep yang disebutkan di atas</li>
+                        <li>Praktikkan dengan membuat program sederhana</li>
+                        <li>Gunakan console browser untuk eksperimen cepat</li>
+                        <li>Pelajari cara memanipulasi DOM (Document Object Model)</li>
+                        <li>Eksplorasi event handling</li>
+                        <li>Pelajari tentang AJAX dan API</li>
+                        <li>Buat proyek-proyek kecil untuk mengasah keterampilan Anda</li>
+                    </ol>
+
+                    <h2 id="sumber-belajar" class="text-2xl font-bold mt-6 mb-4">5. Sumber Belajar</h2>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>MDN Web Docs (developer.mozilla.org)</li>
+                        <li>freeCodeCamp (freecodecamp.org)</li>
+                        <li>Codecademy (codecademy.com)</li>
+                        <li>JavaScript.info</li>
+                    </ul>
+
+                    <h2 id="tips-belajar" class="text-2xl font-bold mt-6 mb-4">6. Tips Belajar</h2>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Konsisten dalam belajar dan berlatih setiap hari</li>
+                        <li>Jangan ragu untuk mencoba dan membuat kesalahan</li>
+                        <li>Bergabung dengan komunitas programmer untuk berdiskusi dan berbagi pengetahuan</li>
+                        <li>Mulai dengan konsep dasar sebelum beralih ke topik yang lebih kompleks</li>
+                    </ul>
+
+                    <p class="mt-6">Dengan mengikuti panduan ini dan terus berlatih, Anda akan dapat membangun fondasi yang kuat dalam pemrograman JavaScript. Selamat belajar dan terus semangat dalam perjalanan coding Anda!</p>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <div class="divider divider-warning mt-8" style="height: 4px;"></div>
+
+    <footer class="bg-gray-100 py-6">
+        <p class="text-center text-gray-600">© 2024 Muhammad Hairudin. Baarokallahu Fiik.</p>
+    </footer>
+</body>
+</html>
